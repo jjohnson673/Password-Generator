@@ -21,17 +21,28 @@ function getRandomItem(list) {
 
 function generatePassword() {
 
-  var userInput = window.prompt("How many characters would you like your password to be?")
-var passwordLength = parseInt(userInput)
 
-/* if password length is not a number, would receive a window pop-up alert */
-if (isNaN(passwordLength)) {
-  window.alert("Please make sure your password contains a number")
-return
-  }
-/* if password length requested is less than 8 or more than 128, would receive a pop-up message */
-  if (passwordLength <8 || passwordLength > 128){
-    window.alert("Password length must be between 8 and 128 characters")  
+
+/* until a numeric value between 8 and 128 is entered, the pop up will continue to loop until all criteria has been met before continuing on to ask about symbols/numbers/upper/lowercase characters */
+
+
+  while (true) {
+
+    var userInput = window.prompt("How many characters would you like your password to be?")
+/* allows for user to cancel out of of the window prompts upon the first question asked */
+    if (userInput === null) {
+      return    
+    }
+
+    var passwordLength = parseInt(userInput)
+    if (isNaN(passwordLength)) {
+      window.alert("Please make sure you enter in a numeric value for desired password length")
+    } else if (passwordLength <8 || passwordLength > 128) {
+      window.alert("Password length must be between 8 and 128 characters") 
+    } else {
+    break
+    }
+
   }
 /*messages created to verify the information wanted in generated password*/
 var userWantsUppercase = window.confirm("Would you like to include UPPERCASE characters in your password?   Press 'OK' for YES or 'Cancel' for NO")
