@@ -14,7 +14,7 @@ N/A
 Within this page you will be able to find multiple boolean variables, a full loop with break and If/Else statements. By implementing these statements, I was able to determine which items a user would want to have within their generated password. The loop  and loop break was implemented to allow the user to exit out of the initial window prompt and to allow the user to be able to loop back to the main question without needing to leave the page to restart.
 
 
-![Password Generator](./Develop/Images/PasswordGenerator.png)
+![Password Generator](./Assets/Images/PasswordGenerator.png)
 
 
 ## Credits
