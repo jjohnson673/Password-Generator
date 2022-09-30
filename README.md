@@ -2,7 +2,7 @@
 
 ## Description
 
-This main webpage was designed as a part of a Challenge for Module 2. This password generator will generate a randomized password between 8 ad 128 characters long. The user does get to input whether they would like all or some of the following categories within their password: uppercase letters, lowercase letters, numbers and symbols.
+This main webpage was designed as a part of a Challenge for Module 2. This password generator will generate a randomized password between 8 and 128 characters long. The user does get to input whether they would like all or some of the following categories within their password: uppercase letters, lowercase letters, numbers and symbols.
 
 Creating a password generator allowed to use recent knowledge gained with JavaScript. I was able to see where I went wrong with a lot of my coding by using console.log and seeing how it was being logged through the Dev Tools. This allowed me to make minor adjustments until I was able to locate exactly where I went wrong and how to correct my path.
 
